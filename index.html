@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css" text="text/css"/>
+  </head>
+  <body>
+    <h1>Bio about me</h1>
+    <script>
+      var userName = prompt('What\'s your name?');
+      alert('Hello ' + userName + '. Thanks for coming to my site!');
+
+      // We want to ask the user a question
+      // Take their answer as input; store in a var
+      // Validate that their answer matches my answer
+      // Depending on True or False, provide feedback
+
+      var answerOne = prompt('What state were you born in?');
+      var myAnswerOne = 'Washington';
+
+      if(answerOne === myAnswerOne) {
+        // Do something
+        alert('You are correct. I was born in Washington!');
+      } else {
+        // Do something else
+        alert('Sorry that\'s wrong. I was born in Washington!');
+      }
+
+    </script>
+    <!--<script src="app.js"></script>-->
+  </body>
+</html>
