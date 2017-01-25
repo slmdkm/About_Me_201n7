@@ -8,6 +8,7 @@
     <h1>Bio about me</h1>
     <script>
       var userName = prompt('What\'s your name?');
+      console.log('The user\'s name is ' + userName);
       alert('Hello ' + userName + '. Thanks for coming to my site!');
 
       // We want to ask the user a question
@@ -16,6 +17,7 @@
       // Depending on True or False, provide feedback
 
       var answerOne = prompt('What state were you born in?');
+      console.log('The user answered ' + answerOne);
       var myAnswerOne = 'Washington';
 
       if(answerOne === myAnswerOne) {
