@@ -35,69 +35,55 @@
         <li>Camping</li>
       </ul>
     </div>
-    </main>
-    <footer>
+  </main>
+  <footer>
+  </footer>
+  <script>
+  // Acquire the users name
+  var userName = prompt('What\'s your name?');
+  alert('Hello ' + userName + ' nice to meet you!');
+  console.log('User name: ' + userName);
 
-    </footer>
-    <script>
+  // Question #1
+  // Where was I born?
+  var answerOne = prompt('Where was I born?');
+  var myAnswerOne = 'new york';
+  if(answerOne.toLowerCase() === myAnswerOne) {
+    alert('You got it correct! I was born in New York.')
+  } else {
+    alert('Wrong Answer!')
+  }
 
-    // Asking the user for their name.
-    var nameQuestion = prompt('Hello, what\'s your name?');
-    console.log('Name: ' + nameQuestion);
-    alert('Hi ' + nameQuestion + ' nice to meet you!');
+  // Question #2
+  // Where am I currently a student?
+  var answerTwo = prompt('Where am I currently a student?')
+  var myAnswerTwo = 'code fellows';
+  if(answerTwo.toLowerCase() === myAnswerTwo) {
+    alert('That is Correct! I\'m currently a student at Code Fellows');
+  } else {
+    alert('Wrong Answer!')
+  }
 
-    // Question number one
-    // Asking the user for their age.
-    var answerOne = prompt('How old are you?');
-    console.log('Age: ' + answerOne);
-    var myAge = 36;
-    if (answerOne == 36) {
-      alert('We\'re the same age!');
-    } else if (answerOne < 36){
-      alert('So you\'re younger then me. I was born in 1980.');
-    } else {
-      (answerOne > 36)
-      alert('So you\'re older then me. I was born in 1980.' )
-    }
+  // Question #3
+  // How many years did I serve in the Marine Corps?
+  var answerThree = prompt('How many years did I serve in the Marine Corps?')
+  var myAnswerThree = 10;
+  if(answerThree == myAnswerThree) {
+    alert('That is Correct! I served 10 years!');
+  } else {
+    alert('Wrong Answer!');
+  }
 
-    //Question number two
-    // Asking the user if they have pets.
-    var answerTwo = prompt('Do you have any pets ' + nameQuestion + '?');
-    console.log('Pets: ' + answerTwo);
-    if (answerTwo.toLowerCase() === 'yes') {
-      alert('That\'s cool! I do too. I have three dogs and two cats.')
-    } else {
-      alert('Pets aren\'t for everyone! ');
-    }
-    // Question number three
-    // Asking the user if they're enjoying the class so far.
-    var answerThree = prompt('Are you enjoying the 201 class so far?');
-    console.log('Enjoy\'s class: ' + answerThree);
-    if(answerThree.toLowerCase() === 'yes') {
-      alert('I am too!');
-    } else {
-      alert('I am not either.');
-    }
+  // Question #4
+  // In what field did I always have an interest in?
+  var answerFour = prompt('In what field did I always have an interest?');
+  var myAnswerFour = 'technology';
+  if(answerFour.toLowerCase() === myAnswerFour) {
+    alert('Technology! That is Correct!')
+  } else {
+    alert('Wrong Answer!')
+  }
 
-    //Question number four
-    // Ask the user where I was born
-    var answerFour = prompt('Where was I born?');
-    console.log('User answered: ' + answerFour);
-    var myAnswerFour = 'new york';
-    if(answerFour.toLowerCase() === myAnswerFour) {
-      alert('You got it correct. I was born in New York!')
-    } else {
-      alert('Sorry wrong answer!')
-    }
-    // // Question number five
-    // var answerFive = prompt();
-    // console.log(answerFive);
-    // // Question number six
-    // var answerSix = prompt();
-    // console.log(answerSix);
-    // // Question number seven
-    // var answerSeven = prompt();
-    // console.console.log(answerSeven);
-    </script> 
-  </body>
-  <html>
+  </script>
+</body>
+<html>
