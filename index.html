@@ -1,67 +1,103 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1 id="main_heading">Welcome to my page</h1>
-    </header>
-    <main>
-      <div class="intro">
-       <p>Hello, my name is Keith and I'm currently a student at Code Fellows in Seattle.  I come from a military background.  I spent ten years in the Marine Corps as a <a href="https://en.wikipedia.org/wiki/STA_platoon" target=" _blank">S.T.A.</a> team member. I also did a few years as an S.S.B.C. instructor.  I eventually transitioned to the Army and finished out my career with just six years due to injury. I've always had an interest in technology so becoming a programmer seemed to be a wise career choice.</p>
-     </div>
-      <div class="favMovies">
-        <h3>Favorite Movies</h3>
-      </div>
-      <div>
-        <h3>
-      </div>
+<head>
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to my page</h1>
+  </header>
+  <main>
+    <!-- QUICK WRITE UP ABOUT YOU -->
+    <div class="intro">
+      <p>Hello, my name is Keith I was born in New York. I'm currently a student attending Code Fellows in Seattle. I've spent a combined total of sixteen years in the military. Ten years in the Marine Corps as a <a href="https://en.wikipedia.org/wiki/United_States_Marine_Corps_Scout_Sniper" target=" _blank">Scout Sniper</a>, to include a few years as an <a href="http://www.trngcmd.marines.mil/Units/Northeast/Weapons-Training-Battalion/Scout-Sniper-Instructor-School/" target="_blank">S.S.B.C.</a> instructor.  I eventually transitioned into the Army where my career was cut short due to injury. I've always had an interest in technology so becoming a programmer seemed to be a wise career choice.</p>
+    </div>
+    <!-- LIST OF FAVORITE MOVIES -->
+    <div class="favMovies">
+      <h3>Favorite Movies</h3>
+      <ol id="listOfMovies">
+        <li><a href="http://www.imdb.com/title/tt0470752/" target="_blank">Ex_Machina</a></li>
+        <li><a href="http://www.imdb.com/title/tt1375666/" target="_blank">Inception</a></li>
+        <li><a href="http://www.imdb.com/title/tt1446714/" target="_blank">Prometheus</a></li>
+        <li><a href="http://www.imdb.com/title/tt1211837/" target="_blank">Dr. Strange</a></li>
+        <li><a href="http://www.imdb.com/title/tt3498820/" target="_blank">Captain America: Civil War</a></li>
+      </ol>
+    </div>
+    <!-- LIST OF HOBBIES -->
+    <div class="hobbies">
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Photography</li>
+        <li>Hiking</li>
+        <li>Traveling</li>
+        <li>Coding</li>
+        <li>Camping</li>
+      </ul>
+    </div>
     </main>
     <footer>
 
     </footer>
     <script>
-      var nameQuestion = prompt('Hello, what\'s your name?');
-      // console.log('The user\'s name is ' + nameQuestion);
-      // alert('Hi ' + nameQuestion + ' nice to meet you!');
-      //
-      // // Question number one
-      // var answerOne = prompt('How old are you?');
-      // console.log(answerOne);
-      // var myAge = 36;
-      // if (answerOne <= myAge) {
-      //   alert('So you\'re younger then me. I was born in 1980.');
-      // } else {
-      //   alert('So you\'re older then me. I was born in 1980.' )
-      // }
 
-      // Question number two
-      var answerTwo = prompt('Do you have any pets ' + nameQuestion + '?');
-      console.log(answerTwo);
-      if (answerTwo.toLowerCase() === 'y' || 'yes') {
-        alert('That\'s cool! I do too. I have three dogs and two cats.')
-      } else {
-        alert('Pets aren\'t for everyone! ');
-      }
+    // Asking the user for their name.
+    var nameQuestion = prompt('Hello, what\'s your name?');
+    console.log('Name: ' + nameQuestion);
+    alert('Hi ' + nameQuestion + ' nice to meet you!');
 
+    // Question number one
+    // Asking the user for their age.
+    var answerOne = prompt('How old are you?');
+    console.log('Age: ' + answerOne);
+    var myAge = 36;
+    if (answerOne == 36) {
+      alert('We\'re the same age!');
+    } else if (answerOne < 36){
+      alert('So you\'re younger then me. I was born in 1980.');
+    } else {
+      (answerOne > 36)
+      alert('So you\'re older then me. I was born in 1980.' )
+    }
 
-      // // Question number three
-      // var answerThree = prompt();
-      // console.log(answerThree);
-      // // Question number four
-      // var answerFour = prompt();
-      // console.log(answerFour);
-      // // Question number five
-      // var answerFive = prompt();
-      // console.log(answerFive);
-      // // Question number six
-      // var answerSix = prompt();
-      // console.log(answerSix);
-      // // Question number seven
-      // var answerSeven = prompt();
-      // console.console.log(answerSeven);
-    </script>
+    //Question number two
+    // Asking the user if they have pets.
+    var answerTwo = prompt('Do you have any pets ' + nameQuestion + '?');
+    console.log('Pets: ' + answerTwo);
+    if (answerTwo.toLowerCase() === 'yes') {
+      alert('That\'s cool! I do too. I have three dogs and two cats.')
+    } else {
+      alert('Pets aren\'t for everyone! ');
+    }
+    // Question number three
+    // Asking the user if they're enjoying the class so far.
+    var answerThree = prompt('Are you enjoying the 201 class so far?');
+    console.log('Enjoy\'s class: ' + answerThree);
+    if(answerThree.toLowerCase() === 'yes') {
+      alert('I am too!');
+    } else {
+      alert('I am not either.');
+    }
+
+    //Question number four
+    // Ask the user where I was born
+    var answerFour = prompt('Where was I born?');
+    console.log('User answered: ' + answerFour);
+    var myAnswerFour = 'new york';
+    if(answerFour.toLowerCase() === myAnswerFour) {
+      alert('You got it correct. I was born in New York!')
+    } else {
+      alert('Sorry wrong answer!')
+    }
+    // // Question number five
+    // var answerFive = prompt();
+    // console.log(answerFive);
+    // // Question number six
+    // var answerSix = prompt();
+    // console.log(answerSix);
+    // // Question number seven
+    // var answerSeven = prompt();
+    // console.console.log(answerSeven);
+    </script> -->
   </body>
-<html>
+  <html>
