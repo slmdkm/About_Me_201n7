@@ -17,3 +17,8 @@ h1, h2, h3 {
   border: 1px solid black;
   background-color: red;
 }
+
+.promptQuestions {
+  border: 1px solid black;
+  background-color: blue;
+}
