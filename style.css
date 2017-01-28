@@ -17,10 +17,10 @@ h2, h3 {
 }
 
 ol#listOfMovies{
-  width: 345px;
+  /*width: 345px;*/
 }
 div.favMovies {
-  float: right;
+  /*float: right;*/
 }
 
 .favMovies {
