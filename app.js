@@ -4,7 +4,6 @@
 var userName = prompt('Hello, what\'s your name?');
 alert('Hello ' + userName + ' nice to meet you!');
 console.log('User name: ' + userName);
-
 // Question #1
 // Where was I born?
 var answerOne = prompt('Where was I born?');
@@ -16,7 +15,6 @@ if(answerOne.toLowerCase() === myAnswerOne) {
   alert('Wrong Answer!');
   console.log('Question #1: Incorrect!');
 }
-
 // Question #2
 // Where am I currently a student?
 var answerTwo = prompt('Where am I currently a student?');
@@ -28,7 +26,6 @@ if(answerTwo.toLowerCase() === myAnswerTwo) {
   alert('Wrong Answer!');
   console.log('Question #2: Incorrect!');
 }
-
 // Question #3
 // How many years did I serve in the Marine Corps?
 var answerThree = prompt('How many years did I serve in the Marine Corps?');
@@ -40,7 +37,6 @@ if(answerThree == myAnswerThree) {
   alert('Wrong Answer!');
   console.log('Question #3: Incorrect!');
 }
-
 // Question #4
 // In what field did I always have an interest in?
 var answerFour = prompt('In what field did I always have an interest?');
@@ -52,7 +48,6 @@ if(answerFour.toLowerCase() === myAnswerFour) {
   alert('Wrong Answer!');
   console.log('Question #4: Incorrect!');
 }
-
 // Question #5
 // Ask the user if they're having fun in the class **LOGICAL OPERATOR**
 var answerFive = prompt('Are you having fun in the class so far?');
@@ -63,20 +58,8 @@ if(answerFive.toLowerCase() === 'yes' || answerFive.toLowerCase() === 'y') {
   alert('Sorry to hear that!');
   console.log('Question #5: No');
 }
-
-// // Question #6
-// var answerSix = prompt('What\'s one of my favorite movies?');
-// var arrayOfMovies = ['Ex Machina', 'Inception', 'Prometheus', 'Dr. Strange', 'Captain America: Civil War', 'Tombstone', 'Iron Man', 'Iron Man 2', 'John Wick', 'Magnificent Seven'];
-// if(answerSix === arrayOfMovies) {
-//   alert('Correct!');
-//   console.log('Question #6: Correct!');
-// } else {
-//   alert('Wrong Answer!');
-//   console.log('Question #6: Incorrect!');
-// }
-
-// Question #7
-// Number guessing Question
+//Question #6
+//Number Array Question
 var colors = ['red', 'green', 'black'];
 var favColors = prompt('Can you guess one of my favorite color?').toLowerCase();
 if (colors.indexOf(favColors) !== - 1) {
@@ -86,3 +69,23 @@ if (colors.indexOf(favColors) !== - 1) {
   alert('Nope that was incorrect!');
   console.log('User guessed incorrectly');
 }
+
+// Question #7
+for(var i = 0; i < 6; i++ ) {
+  var stateArray = ['maine', 'hawaii', 'new york'];
+  var userGuess = prompt('Can you guess which state I\'ve lived in besides Washington?');
+  if(stateArray.indexOf(userGuess) !== - 1 ) {
+    alert('Good guess! You got it correct!');
+    break;
+  } else {
+    alert('Try again!');
+  }
+}
+// console.log('USERGUESS', userGuess;
+
+// // if(userGuess === stateArray) {
+// if(stateArray.indexOf(userGuess)) {
+//   console.log('correct');
+// } else {
+//   console.log('WRONG!');
+// };
