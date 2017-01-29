@@ -25,6 +25,16 @@ div.favMovies {
 }
 
 .favMovies {
+  background-color: aqua;
+  width: auto;
+}
+
+.hobbies {
+  background-color: red;
+    width: auto;
+}
+
+.favMovies {
   border: 1px solid black;
   /*background-color: black;*/
 }

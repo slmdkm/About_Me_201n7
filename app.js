@@ -4,6 +4,7 @@ var totalCorrect = [];
 var totalIncorrect = [];
 console.log(totalCorrect);
 console.log(totalIncorrect);
+
 // Acquire the users name
 var userName = prompt('Hello, what\'s your name?');
 alert('Hello ' + userName + ' nice to meet you!');
