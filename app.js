@@ -9,6 +9,7 @@ console.log(totalIncorrect);
 var userName = prompt('Hello, what\'s your name?');
 alert('Hello ' + userName + ' nice to meet you!');
 console.log('User name: ' + userName);
+
 // Question #1
 // Where was I born?
 var answerOne = prompt('Where was I born?');
@@ -35,6 +36,7 @@ if(answerTwo.toLowerCase() === myAnswerTwo) {
   console.log('Question #2: Incorrect!');
   totalIncorrect.push(2);
 }
+
 // Question #3
 // How many years did I serve in the Marine Corps?
 var answerThree = prompt('How many years did I serve in the Marine Corps?');
@@ -48,6 +50,7 @@ if(answerThree == myAnswerThree) {
   console.log('Question #3: Incorrect!');
   totalIncorrect.push(3);
 }
+
 // Question #4
 // In what field did I always have an interest in?
 var answerFour = prompt('In what field did I always have an interest?');
@@ -61,6 +64,7 @@ if(answerFour.toLowerCase() === myAnswerFour) {
   console.log('Question #4: Incorrect!');
   totalIncorrect.push(4);
 }
+
 // Question #5
 // Ask the user if they're having fun in the class **LOGICAL OPERATOR**
 var answerFive = prompt('Are you having fun in the class so far?');
@@ -73,6 +77,7 @@ if(answerFive.toLowerCase() === 'yes' || answerFive.toLowerCase() === 'y') {
   console.log('Question #5: No');
   totalIncorrect.push(5);
 }
+
 //Question #6
 //Number Array Question
 var colors = ['red', 'green', 'black'];
@@ -86,6 +91,7 @@ if (colors.indexOf(favColors) !== - 1) {
   console.log('Question #6: Incorrect!');
   totalIncorrect.push(6);
 }
+
 // Question #7
 // Guessing the Number
 for(var j = 0; j <= 4; j++) { // creating a for loop that loops a set amount of times
@@ -118,3 +124,8 @@ for(var i = 0; i < 6; i++ ) {
     totalIncorrect.push(8);
   }
 }
+
+// Notification Alert: Notifying user of how any are correct and in correct
+
+alert('Correct answers: ' + totalCorrect.length);
+alert('Incorrect answers: ' + totalIncorrect.length);
