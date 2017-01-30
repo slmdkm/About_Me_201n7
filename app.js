@@ -23,6 +23,7 @@ if(answerOne.toLowerCase() === myAnswerOne) {
   console.log('Question #1: Incorrect!');
   totalIncorrect.push(1);
 }
+
 // Question #2
 // Where am I currently a student?
 var answerTwo = prompt('Where am I currently a student?');
@@ -70,11 +71,11 @@ if(answerFour.toLowerCase() === myAnswerFour) {
 var answerFive = prompt('Are you having fun in the class so far?');
 if(answerFive.toLowerCase() === 'yes' || answerFive.toLowerCase() === 'y') {
   alert('That\'s good to hear! I am having fun too!');
-  console.log('Question #5: Yes');
+  console.log('Question #5 answer: Yes');
   totalCorrect.push(5);
 } else {
   alert('Sorry to hear that!');
-  console.log('Question #5: No');
+  console.log('Question #5 answer: No');
   totalIncorrect.push(5);
 }
 
@@ -97,7 +98,6 @@ if (colors.indexOf(favColors) !== - 1) {
 for(var j = 0; j <= 4; j++) { // creating a for loop that loops a set amount of times
   var numberAnswer = 5; // the number the user needs to guess
   var userNumberGuess = prompt('Can you guess the number?'); // what the user sees on the screen
-  console.log(userNumberGuess);
   if(userNumberGuess == numberAnswer) { // begining of the if statement
     alert('Good job!');
     totalCorrect.push(7);
