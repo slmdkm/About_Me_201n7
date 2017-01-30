@@ -127,5 +127,4 @@ for(var i = 0; i < 6; i++ ) {
 
 // Notification Alert: Notifying user of how any are correct and in correct
 
-alert('Correct answers: ' + totalCorrect.length);
-alert('Incorrect answers: ' + totalIncorrect.length);
+alert(userName + ', you got ' + totalCorrect.length + ' correct and ' + totalIncorrect.length + ' incorrect, good job!');
