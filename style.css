@@ -1,12 +1,15 @@
 * {
   font-family: 'Special Elite', cursive;
-  border: 1px solid orange;
+  /*border: 1px solid orange;*/
   text-decoration: none;
   color: white;
 }
+p {
+  padding: 20px;
+}
 img {
   height: 500px;
-  width: 500px;
+  width: 100%;
 }
 body {
   background-color: black;*/
@@ -33,12 +36,12 @@ div.favMovies {
 }
 
 .favMovies {
-  background-color: aqua;
+  background-color: green;
   width: auto;
 }
 
 .hobbies {
-  background-color: red;
+  background-color: blue;
     width: auto;
 }
 
