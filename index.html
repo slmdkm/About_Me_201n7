@@ -1,24 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>My Project Page</h1>
-    </header>
-    <main>
-      <div class="firstDiv">
-       <p>First paragraph.</p>
-     </div>
-      <div class="secondDiv">
-        <p>Second paragraph.</p>
-      </div>
-    </main>
-    <footer>
+<head>
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to my page</h1>
+  </header>
+  <img src="img/waterfall.jpg">
+  <main>
+    <!-- QUICK WRITE UP ABOUT YOU -->
+    <div class="intro">
+      <p>Hello, my name is Keith I was born in New York. I'm currently a student attending Code Fellows in Seattle. I've spent a combined total of sixteen years in the military. Ten years in the Marine Corps as a <a href="https://en.wikipedia.org/wiki/United_States_Marine_Corps_Scout_Sniper" target=" _blank"><em>Scout Sniper</em></a>, to include a few years as an <a href="http://www.trngcmd.marines.mil/Units/Northeast/Weapons-Training-Battalion/Scout-Sniper-Instructor-School/" target="_blank"><em>S.S.B.C.</em></a> instructor.  I eventually transitioned into the Army where my career was cut short due to injury. I've always had an interest in technology so becoming a programmer seemed to be a wise career choice.</p>
+    </div>
 
-    </footer>
-    <script src="app.js"></script>
-  </body>
+    <!-- LIST OF FAVORITE MOVIES -->
+    <div id="twoLists">
+      <div class="favMovies">
+        <h3>Favorite Movies</h3>
+        <ol id="listOfMovies">
+          <li><a href="http://www.imdb.com/title/tt0470752/" target="_blank">Ex_Machina</a></li>
+          <li><a href="http://www.imdb.com/title/tt1375666/" target="_blank">Inception</a></li>
+          <li><a href="http://www.imdb.com/title/tt1446714/" target="_blank">Prometheus</a></li>
+          <li><a href="http://www.imdb.com/title/tt1211837/" target="_blank">Dr. Strange</a></li>
+          <li><a href="http://www.imdb.com/title/tt3498820/" target="_blank">Captain America: Civil War</a></li>
+          <li><a href="http://www.imdb.com/title/tt0108358/" target="_blank">Tombstone</a></li>
+          <li><a href="http://www.imdb.com/title/tt0371746/" target="_blank">Iron Man</a></li>
+          <li><a href="http://www.imdb.com/title/tt1228705/?ref_=tt_rec_tt" target="_blank">Iron Man 2</a></li>
+          <li><a href="http://www.imdb.com/title/tt2911666/" target="_blank">John Wick</a></li>
+          <li><a href="http://www.imdb.com/title/tt2404435/" target="_blank">Magnificent Seven</a></li>
+        </ol>
+      </div>
+      <!-- LIST OF HOBBIES -->
+      <div class="hobbies">
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Photography</li>
+          <li>Hiking</li>
+          <li>Traveling</li>
+          <li>Coding</li>
+          <li>Camping</li>
+        </ul>
+      </div>
+    </div>
+    <div class="promptQuestions">
+      <h3>Prompt Questions</h3>
+      <p>Where was I Born?</p>
+      sayHello();
+      <p>Where am I currently a student?</p>
+      <p>How many years did I serve in the Marine Corps?</p>
+      <p>In which field did I always have an interest in?</p>
+    </div>
+  </main>
+  <footer>
+  </footer>
+  <script src ="app.js"></script>
+</body>
 <html>

@@ -1,3 +1,60 @@
 * {
-  border: 1px solid orange;
+  font-family: 'Special Elite', cursive;
+  /*border: 1px solid orange;*/
+  text-decoration: none;
+  color: white;
+}
+p {
+  padding: 20px;
+}
+img {
+  height: 500px;
+  width: 100%;
+}
+body {
+  background-color: black;*/
+}
+
+h1 {
+  font-family: 'Taviraj', serif;
+  text-align: center;
+  font-size: 50px;
+}
+h3 {
+  font-family: Arial, Verdana, sans-serif;
+}
+
+ol#listOfMovies{
+  /*width: 345px;*/
+}
+div.favMovies {
+  /*float: right;*/
+}
+
+.intro {
+
+}
+
+.favMovies {
+  background-color: green;
+  width: auto;
+}
+
+.hobbies {
+  background-color: blue;
+    width: auto;
+}
+
+.favMovies {
+  border: 1px solid black;
+  /*background-color: black;*/
+}
+.hobbies {
+  border: 1px solid black;
+  /*background-color: black;*/
+}
+
+.promptQuestions {
+  border: 1px solid black;
+  /*background-color: black;*/
 }
