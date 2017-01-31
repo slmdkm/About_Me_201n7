@@ -6,7 +6,7 @@ console.log(totalCorrect);
 console.log(totalIncorrect);
 
 // Acquire the users name
-var userName = prompt('Hello, what\'s your name?');
+var userName = prompt('Hello, what\'s your name?') || 'Guest';
 alert('Hello ' + userName + ' nice to meet you!');
 console.log('User name: ' + userName);
 
@@ -126,5 +126,4 @@ for(var i = 0; i < 6; i++ ) {
 }
 
 // Notification Alert: Notifying user of how any are correct and in correct
-
 alert(userName + ', you got ' + totalCorrect.length + ' correct and ' + totalIncorrect.length + ' incorrect, good job!');
