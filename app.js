@@ -12,6 +12,7 @@ console.log('User name: ' + userName);
 
 // Question #1
 // Where was I born?
+funtion firstQuestion(){
 var answerOne = prompt('Where was I born?');
 var myAnswerOne = 'new york';
 if(answerOne.toLowerCase() === myAnswerOne) {
@@ -23,6 +24,9 @@ if(answerOne.toLowerCase() === myAnswerOne) {
   console.log('Question #1: Incorrect!');
   totalIncorrect.push(1);
 }
+}
+firstQuestion();
+
 
 // Question #2
 // Where am I currently a student?
